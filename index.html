@@ -25,25 +25,28 @@
       font-family: basic-sans, sans-serif;
       font-weight: 300;
       font-style: normal;
-      line-height: 1;
-      margin-bottom: 7px;
+      line-height: 1.1;
+      font-size: 1.4em;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 35px;
     }
 
     h2 {
       font-family: "freight-big-pro", serif;
       font-weight: 700;
-      font-size: 3em;
+      font-size: 2.4em;
       line-height: 1;
       letter-spacing: 0.03em;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     p {
       font-family: basic-sans, sans-serif;
       font-weight: 300;
       font-style: normal;
-      font-size: 1.15em;
-      line-height: 1.4;
+      font-size: 1.25em;
+      line-height: 1.5;
       letter-spacing: 0.03em;
     }
 
@@ -101,24 +104,21 @@
       top: 135px;
     }
 
-
-
     main {
       padding: 50px 25px;
     }
 
-    h3 {
-      font-size: 1.3em;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+    .btn-outline-light {
+      border: 2px solid white;
+      padding: 15px;
+      font-weight: 600;
+      margin-top: 30px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 20px;
+      width: calc(100% - 40px);
     }
-
-    h2 {
-      font-size: 2.4em;
-      margin-bottom: 20px;
-    }
-
-
 
     @media only screen and (max-width: 768px) {
       .swiper {
@@ -159,10 +159,15 @@
 
           </div>
           <div class="text-center">
-            <h3 class="loading" id="loading">Loading...</h3>
-            <h2>The Vertical Web</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas volutpat aliquet odio, id tincidunt nisl porttitor non. Nam in pulvinar velit. Nunc eget feugiat lacus.</p>
+            <h2>The Vertical Web</h2>
+            <h3>Web app builder</h3>
+
+
+            <p>Why create a landing-page if you could be creating a <em>landing-app?</em>. The Vertical Web allows you to easily create apps and presentations that users can install on the home screen of their mobile device!</p>
+
+            <button class="btn btn-outline-light">Get Started</button>
+
           </div>
 
         </main>
@@ -202,14 +207,15 @@
     });
 
 
+    /*
+        setTimeout(() => {
 
-    setTimeout(() => {
+          document.querySelectorAll('.loading').forEach((e) => {
+            e.innerHTML = "Welcome to"
+          })
 
-      document.querySelectorAll('.loading').forEach((e) => {
-        e.innerHTML = "Welcome to"
-      })
-
-    }, 1500);
+        }, 1500);
+        */
   </script>
 
 </body>
