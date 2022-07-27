@@ -115,8 +115,14 @@
       margin: 20px;
       width: calc(100% - 40px);
       border-radius: 12px;
+      background-color: #1232F5;
     }
 
+    .body {
+      height: 90%;
+      overflow: hidden;
+      overflow-y: auto;
+    }
 
     @media only screen and (max-width: 768px) {
       .swiper {
@@ -141,7 +147,7 @@
 
 
       <div class="wdgt swiper-slide">
-        <main>
+        <main class="body">
           <div class="d-flex justify-content-center">
 
             <!--
@@ -161,8 +167,9 @@
             <h2>The Vertical Web</h2>
             <h3>Web app builder</h3>
 
-
-            <p>Why create a landing-page if you could be creating a <em>landing-app?</em>. The Vertical Web allows you to easily create apps and presentations that users can install on the home screen of their mobile device!</p>
+            <div>
+              <p>Why create a landing-page if you could be creating a <em>landing-app?</em>. The Vertical Web allows you to easily create apps and presentations that users can install on the home screen of their mobile device!</p>
+            </div>
 
             <button class="btn btn-outline-light">Get Started</button>
 
@@ -180,6 +187,7 @@
     <!-- If we need navigation buttons -->
     <div class="swiper-button-prev"></div>
     <div class="swiper-button-next"></div>
+
 
   </div>
 
@@ -201,6 +209,8 @@
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+
+
 
     });
 
